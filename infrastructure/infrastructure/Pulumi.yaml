@@ -1,0 +1,13 @@
+name: semantest-infrastructure
+runtime: python
+description: Infrastructure as Code for Semantest serverless deployments
+config:
+  provider:
+    description: Cloud provider (aws or azure)
+    default: aws
+  environment:
+    description: Deployment environment (dev, staging, prod)
+    default: dev
+  region:
+    description: Cloud region
+    default: us-east-1
