@@ -9,18 +9,20 @@ This project follows the PythonEDA pattern to maintain a clean separation betwee
 ### Directory Structure
 
 ```
-infrastructure/
+.
 ├── src/                    # Source code
-│   ├── domain/            # Domain entities and value objects
-│   ├── application/       # Application services
-│   └── infrastructure/    # Infrastructure implementations
-├── infrastructure/        # Pulumi infrastructure definitions
-│   ├── aws/              # AWS-specific infrastructure
-│   ├── azure/            # Azure-specific infrastructure
-│   └── shared/           # Shared infrastructure components
-├── tests/                # Test files
-├── docs/                 # Documentation
-└── scripts/              # Utility scripts
+│   └── semantest/
+│       ├── domain/        # Domain entities and value objects
+│       ├── application/   # Application services
+│       └── infrastructure/# Infrastructure implementations
+│           ├── aws/       # AWS-specific infrastructure
+│           ├── azure/     # Azure-specific infrastructure
+│           └── shared/    # Shared infrastructure components
+├── tests/                 # Test files
+├── docs/                  # Documentation
+├── scripts/               # Utility scripts
+├── __main__.py           # Pulumi entry point
+└── Pulumi.yaml           # Pulumi project configuration
 ```
 
 ## Design Principles
